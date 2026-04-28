@@ -80,7 +80,7 @@ export default function Insights() {
             playsInline
             poster="/images/hero_estate_1777410578117.png"
           >
-            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+            <source src="https://www.pexels.com/download/video/6868430/" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           <div className={`${styles.videoCaption} glass`}>
