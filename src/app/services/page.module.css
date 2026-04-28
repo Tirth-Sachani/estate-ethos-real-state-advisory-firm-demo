@@ -1,0 +1,244 @@
+.main {
+  min-height: 100vh;
+  padding-top: 100px;
+  background-color: var(--background);
+}
+
+.pageHeader {
+  padding: var(--spacing-xl) 0 var(--spacing-lg);
+  text-align: center;
+}
+
+.title {
+  color: var(--primary);
+  margin-bottom: var(--spacing-sm);
+  font-size: 56px;
+}
+
+.subtitle {
+  color: var(--on-surface-variant);
+  font-size: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 40px;
+  }
+  .subtitle {
+    font-size: 18px;
+  }
+}
+
+.servicesContainer {
+  padding: var(--spacing-lg) 0 var(--spacing-xl);
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.card {
+  padding: var(--spacing-xl) var(--spacing-lg);
+  border-radius: var(--radius-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 48px rgba(0, 0, 60, 0.08);
+}
+
+.cardNumber {
+  font-family: var(--font-heading);
+  font-size: 64px;
+  color: var(--primary);
+  opacity: 0.1;
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  line-height: 1;
+}
+
+.cardTitle {
+  font-size: 28px;
+  color: var(--primary);
+  z-index: 1;
+}
+
+.cardText {
+  color: var(--on-surface-variant);
+  font-size: 16px;
+  line-height: 1.8;
+  z-index: 1;
+  flex-grow: 1;
+}
+
+.cardLink {
+  color: var(--secondary);
+  font-family: var(--font-body);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.3s ease;
+  z-index: 1;
+}
+
+.cardLink:hover {
+  color: var(--primary);
+}
+
+/* Methodology Section */
+.methodology {
+  padding: var(--spacing-xl) 0;
+  background-color: var(--surface-container-lowest);
+}
+
+.methodologyHeader {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.methodologyBadge {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  color: #a08129; /* Deep gold */
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.methodologyHeader h2 {
+  color: var(--primary-container);
+  font-size: 36px;
+}
+
+.stepperContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.stepperLine {
+  position: absolute;
+  top: 24px;
+  left: 5%;
+  right: 5%;
+  height: 2px;
+  background-color: var(--outline-variant);
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .stepperContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+  .stepperLine {
+    display: none;
+  }
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  z-index: 10;
+  flex: 1;
+}
+
+.stepCircle {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px; /* Slightly rounded square */
+  background-color: #ffffff;
+  border: 1px solid var(--outline-variant);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--primary-container);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.stepCircle.active {
+  background-color: #041627; /* Dark navy */
+  color: #ffffff;
+  border-color: #041627;
+}
+
+.step p {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--primary-container);
+  text-align: center;
+}
+
+/* Consultation Banner */
+.consultationBanner {
+  background-color: #041627; /* Dark navy */
+  padding: 100px 0;
+}
+
+.bannerContent {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.bannerContent h2 {
+  color: #ffffff;
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.bannerContent p {
+  color: #b7c8de; /* Light blue/grey */
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.ctaButton {
+  margin-top: 16px;
+  padding: 14px 32px;
+  background-color: transparent;
+  color: #e9c349; /* Gold */
+  border: 1px solid #e9c349;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: rgba(233, 195, 73, 0.1);
+}

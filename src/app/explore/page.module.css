@@ -1,0 +1,77 @@
+.main {
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: var(--spacing-xl);
+  background-color: var(--surface-container-low);
+}
+
+.pageHeader {
+  padding: var(--spacing-lg) 0;
+  text-align: center;
+  background-color: var(--surface);
+  border-bottom: 1px solid var(--outline-variant);
+  margin-bottom: var(--spacing-xl);
+}
+
+.title {
+  color: var(--primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.subtitle {
+  color: var(--on-surface-variant);
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto var(--spacing-lg);
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+}
+
+.filterBtn {
+  background: transparent;
+  border: 1px solid var(--outline-variant);
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--on-surface-variant);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filterBtn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.filterBtn.active {
+  background-color: var(--primary);
+  color: var(--on-primary);
+  border-color: var(--primary);
+}
+
+.gridContainer {
+  margin-top: var(--spacing-lg);
+}
+
+.propertiesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 36px;
+  }
+  
+  .propertiesGrid {
+    grid-template-columns: 1fr;
+  }
+}

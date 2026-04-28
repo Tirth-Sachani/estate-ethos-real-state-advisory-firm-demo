@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Our Story - Luxe Advisory</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Noto+Serif:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary-container": "#745c00",
+                      "surface": "#f9f9f9",
+                      "surface-container-low": "#f4f3f3",
+                      "surface-tint": "#4f6073",
+                      "on-tertiary": "#ffffff",
+                      "surface-container-lowest": "#ffffff",
+                      "on-primary": "#ffffff",
+                      "tertiary-fixed": "#e3e3de",
+                      "primary-container": "#1a2b3c",
+                      "secondary-fixed-dim": "#e9c349",
+                      "background": "#f9f9f9",
+                      "on-error": "#ffffff",
+                      "on-tertiary-container": "#90918d",
+                      "on-background": "#1a1c1c",
+                      "inverse-surface": "#2f3131",
+                      "on-secondary-fixed-variant": "#574500",
+                      "outline-variant": "#c4c6cd",
+                      "error-container": "#ffdad6",
+                      "on-error-container": "#93000a",
+                      "on-secondary-fixed": "#241a00",
+                      "secondary": "#735c00",
+                      "inverse-primary": "#b7c8de",
+                      "surface-container": "#eeeeee",
+                      "primary-fixed-dim": "#b7c8de",
+                      "on-tertiary-fixed": "#1a1c19",
+                      "surface-dim": "#dadada",
+                      "on-primary-fixed-variant": "#38485a",
+                      "surface-container-highest": "#e2e2e2",
+                      "primary-fixed": "#d2e4fb",
+                      "tertiary-fixed-dim": "#c6c7c2",
+                      "on-primary-container": "#8192a7",
+                      "on-primary-fixed": "#0b1d2d",
+                      "on-surface": "#1a1c1c",
+                      "on-surface-variant": "#44474c",
+                      "on-secondary": "#ffffff",
+                      "surface-bright": "#f9f9f9",
+                      "inverse-on-surface": "#f1f1f1",
+                      "tertiary": "#141613",
+                      "secondary-fixed": "#ffe088",
+                      "outline": "#74777d",
+                      "secondary-container": "#fed65b",
+                      "error": "#ba1a1a",
+                      "primary": "#041627",
+                      "surface-container-high": "#e8e8e8",
+                      "tertiary-container": "#282a27",
+                      "on-tertiary-fixed-variant": "#454744",
+                      "surface-variant": "#e2e2e2"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "stack-md": "32px",
+                      "unit": "8px",
+                      "margin": "64px",
+                      "container-max": "1440px",
+                      "stack-lg": "80px",
+                      "stack-sm": "16px",
+                      "gutter": "32px"
+              },
+              "fontFamily": {
+                      "h2": [
+                              "Noto Serif"
+                      ],
+                      "label-caps": [
+                              "Inter"
+                      ],
+                      "h1": [
+                              "Noto Serif"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "h3": [
+                              "Noto Serif"
+                      ]
+              },
+              "fontSize": {
+                      "h2": [
+                              "36px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "1",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "h1": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "h3": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "500"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+</head>
+<body class="bg-background text-on-background min-h-screen font-body-md text-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 rounded-none bg-white/70 dark:bg-slate-900/70 backdrop-blur-xl border-b border-white/40 dark:border-slate-800/40 shadow-sm backdrop-saturate-150">
+<div class="flex justify-between items-center h-20 px-8 md:px-16 max-w-full">
+<div class="text-xl font-bold tracking-widest text-[#1A2B3C] dark:text-white">LUXE ADVISORY</div>
+<div class="hidden md:flex space-x-8">
+<a class="text-[#1A2B3C] dark:text-slate-300 hover:text-yellow-600 transition-colors font-['Noto_Serif'] tracking-tight text-sm uppercase scale-100 active:scale-95 duration-200" href="#">Portfolio</a>
+<a class="text-[#1A2B3C] dark:text-slate-300 hover:text-yellow-600 transition-colors font-['Noto_Serif'] tracking-tight text-sm uppercase scale-100 active:scale-95 duration-200" href="#">Advisory</a>
+<a class="text-[#1A2B3C] dark:text-slate-300 hover:text-yellow-600 transition-colors font-['Noto_Serif'] tracking-tight text-sm uppercase scale-100 active:scale-95 duration-200" href="#">Insights</a>
+<a class="text-yellow-600 dark:text-yellow-500 font-semibold border-b border-yellow-600 font-['Noto_Serif'] tracking-tight text-sm uppercase scale-100 active:scale-95 duration-200" href="#">Our Story</a>
+<a class="text-[#1A2B3C] dark:text-slate-300 hover:text-yellow-600 transition-colors font-['Noto_Serif'] tracking-tight text-sm uppercase scale-100 active:scale-95 duration-200" href="#">Contact</a>
+</div>
+<button class="bg-[#1A2B3C] text-white px-6 py-2 text-sm uppercase tracking-widest hover:bg-[#1A2B3C]/90 transition-colors">Inquire</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center justify-center overflow-hidden pt-20">
+<div class="absolute inset-0 z-0">
+<img alt="Hero Background" class="w-full h-full object-cover opacity-80 mix-blend-multiply filter contrast-125 saturate-50" data-alt="Elegant modern executive office with city skyline view, soft natural light, minimalist high-end corporate architecture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUFZBnTILF8F6Usqd390j106BigsLYNwwzyS7_Jwts90QPKuSnKYaZ29-vYa740ebofue6TW102mYzdftC2w2Kw-xvePTdP00h3WsOuaA9idz9ao0IAVZRJZ-cTTN7qZCPIz3US0PO3EixnSAtNie7RNuGFx-ZwT-GsCCU2bYe-bnBuYolEYYIfNTbC2zINGr_FzrQPG46antWn9OAkLlJiuUML1zbzCk_LnGv7a723gAVVhQYR3HjN6eTQtKzTbhpP3wRBJbk9Ws"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-container-max px-gutter text-center">
+<div class="bg-white/70 backdrop-blur-xl border border-white/40 p-12 max-w-3xl mx-auto shadow-[0_4px_30px_rgba(26,43,60,0.05)] rounded-none">
+<span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase mb-4 block">Est. 1978</span>
+<h1 class="font-h1 text-h1 text-primary-container mb-6">A Legacy Built on Trust Since 1978</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto">Forty-five years of guiding generational wealth through shifting markets and evolving landscapes.</p>
+</div>
+</div>
+</section>
+<!-- Story Narrative Section -->
+<section class="py-stack-lg px-gutter max-w-container-max mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="col-span-1 lg:col-span-5 relative">
+<img alt="Heritage Blueprint" class="w-full h-[600px] object-cover grayscale-[30%] rounded-none" data-alt="Vintage architectural blueprint layered with a modern golden pen, symbolizing heritage and forward-thinking design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLlef1ZYsM-jwFW_11kAXd02iAklDg4IsnwAukTVyZp3UGm8BP9SlwJwS78XTAkzajhh27lsJmzzaN8LmSz8bFPWdvCxv248XeRwzbeXGLJznve6Yvw5TJwbG8I_1GLSD8WwVQbWT4dOc0A_fofJWh-nfJ5lCzLuugTPJr7yXUWLrljmf-3Tr9oahtqx4S2y_BlAPFF-WhG2l-fVeFI9H6kTz_me3_dCb6pFJIlsYvj_umgQLCz8dbvg1BzoeDLfPi2ji1QywmHSQ"/>
+<div class="absolute -bottom-8 -right-8 w-64 h-64 bg-secondary-fixed/20 backdrop-blur-xl border border-white/40 z-10 hidden md:block"></div>
+</div>
+<div class="col-span-1 lg:col-span-6 lg:col-start-7 pl-0 lg:pl-stack-md mt-stack-md lg:mt-0">
+<h2 class="font-h2 text-h2 text-primary-container mb-stack-sm">Navigating Decades of Change with Unwavering Principles</h2>
+<div class="space-y-6 font-body-lg text-body-lg text-on-surface-variant">
+<p>In 1978, Luxe Advisory was founded on a singular premise: that the most valuable asset in real estate is not the property itself, but the relationship built around it.</p>
+<p>Through periods of profound economic expansion and severe market contractions, our philosophy has remained resolute. We have guided prominent families and enterprises across multiple market cycles, acting as a steadfast anchor when certainty is scarce.</p>
+<p>We do not measure our success in sheer transaction volume. Instead, we define our legacy by the generational continuity of our clients' wealth and the enduring trust they place in our counsel. This long-term perspective shapes every strategic decision we advise.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Timeline Section -->
+<section class="py-stack-lg bg-surface-container-low border-y border-surface-dim">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="text-center mb-stack-md">
+<h2 class="font-h2 text-h2 text-primary-container">Milestones of Excellence</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative mt-16">
+<!-- Line connecting nodes -->
+<div class="hidden md:block absolute top-6 left-0 w-full h-[1px] bg-outline-variant z-0"></div>
+<!-- Timeline Item 1 -->
+<div class="relative z-10 pt-12 md:pt-0">
+<div class="hidden md:flex absolute top-0 left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-secondary ring-4 ring-white z-20"></div>
+<div class="bg-white/70 backdrop-blur-xl border border-white/40 p-6 md:mt-12 text-center h-full">
+<span class="font-h3 text-h3 text-secondary block mb-2">1978</span>
+<h4 class="font-label-caps text-label-caps text-primary-container mb-2">Foundation</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Established in New York with a focus on private family offices.</p>
+</div>
+</div>
+<!-- Timeline Item 2 -->
+<div class="relative z-10 pt-12 md:pt-0">
+<div class="hidden md:flex absolute top-0 left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-secondary ring-4 ring-white z-20"></div>
+<div class="bg-white/70 backdrop-blur-xl border border-white/40 p-6 md:mt-12 text-center h-full">
+<span class="font-h3 text-h3 text-secondary block mb-2">1995</span>
+<h4 class="font-label-caps text-label-caps text-primary-container mb-2">Expansion</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Opened key offices in global financial hubs, broadening reach.</p>
+</div>
+</div>
+<!-- Timeline Item 3 -->
+<div class="relative z-10 pt-12 md:pt-0">
+<div class="hidden md:flex absolute top-0 left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-secondary ring-4 ring-white z-20"></div>
+<div class="bg-white/70 backdrop-blur-xl border border-white/40 p-6 md:mt-12 text-center h-full">
+<span class="font-h3 text-h3 text-secondary block mb-2">2010</span>
+<h4 class="font-label-caps text-label-caps text-primary-container mb-2">Commercial Growth</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Launched dedicated institutional commercial advisory division.</p>
+</div>
+</div>
+<!-- Timeline Item 4 -->
+<div class="relative z-10 pt-12 md:pt-0">
+<div class="hidden md:flex absolute top-0 left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-secondary ring-4 ring-white z-20"></div>
+<div class="bg-white/70 backdrop-blur-xl border border-white/40 p-6 md:mt-12 text-center h-full">
+<span class="font-h3 text-h3 text-secondary block mb-2">2020+</span>
+<h4 class="font-label-caps text-label-caps text-primary-container mb-2">Digital Transformation</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Integrating predictive analytics with legacy market intuition.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Mission & Vision Section -->
+<section class="py-stack-lg max-w-container-max mx-auto px-gutter">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md">
+<div class="bg-white/70 backdrop-blur-[20px] border border-white/40 shadow-[0_4px_30px_rgba(26,43,60,0.05)] p-12 flex flex-col justify-center min-h-[400px]">
+<span class="material-symbols-outlined text-4xl text-secondary mb-6 block" style="font-variation-settings: 'FILL' 0;">explore</span>
+<h3 class="font-h3 text-h3 text-primary-container mb-4">Our Mission</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant">To deliver strategic real estate decisions through unparalleled market insight, rigorous analysis, and an uncompromising commitment to our clients' long-term prosperity.</p>
+</div>
+<div class="bg-primary-container text-white p-12 flex flex-col justify-center min-h-[400px] relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-secondary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+<span class="material-symbols-outlined text-4xl text-secondary-fixed mb-6 block" style="font-variation-settings: 'FILL' 0;">visibility</span>
+<h3 class="font-h3 text-h3 text-white mb-4 relative z-10">Our Vision</h3>
+<p class="font-body-lg text-body-lg text-primary-fixed-dim relative z-10">To be the most trusted and sought-after real estate advisory in the United States, recognized for elevating industry standards through discretion, expertise, and foresight.</p>
+</div>
+</div>
+</section>
+<!-- Core Values Section -->
+<section class="py-stack-lg bg-surface relative overflow-hidden">
+<!-- Abstract background elements -->
+<div class="absolute -top-40 -left-40 w-96 h-96 bg-primary-fixed/30 rounded-full blur-[100px]"></div>
+<div class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-secondary-container/20 rounded-full blur-[120px]"></div>
+<div class="max-w-container-max mx-auto px-gutter relative z-10">
+<h2 class="font-h2 text-h2 text-primary-container text-center mb-stack-md">Core Tenets</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Value 1 -->
+<div class="bg-white/60 backdrop-blur-[20px] border border-white/50 p-8 shadow-[0_8px_32px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_32px_rgba(26,43,60,0.08)] transition-all duration-500 group">
+<span class="material-symbols-outlined text-3xl text-secondary mb-4 group-hover:scale-110 transition-transform duration-300" style="font-variation-settings: 'FILL' 0;">shield</span>
+<h4 class="font-h3 text-h3 text-primary-container text-xl mb-3">Integrity</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Unwavering ethical standards in every negotiation, ensuring absolute alignment with client interests.</p>
+</div>
+<!-- Value 2 -->
+<div class="bg-white/60 backdrop-blur-[20px] border border-white/50 p-8 shadow-[0_8px_32px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_32px_rgba(26,43,60,0.08)] transition-all duration-500 group">
+<span class="material-symbols-outlined text-3xl text-secondary mb-4 group-hover:scale-110 transition-transform duration-300" style="font-variation-settings: 'FILL' 0;">water_drop</span>
+<h4 class="font-h3 text-h3 text-primary-container text-xl mb-3">Transparency</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Clarity in methodology and candid communication, providing the foundation for informed decisions.</p>
+</div>
+<!-- Value 3 -->
+<div class="bg-white/60 backdrop-blur-[20px] border border-white/50 p-8 shadow-[0_8px_32px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_32px_rgba(26,43,60,0.08)] transition-all duration-500 group">
+<span class="material-symbols-outlined text-3xl text-secondary mb-4 group-hover:scale-110 transition-transform duration-300" style="font-variation-settings: 'FILL' 0;">handshake</span>
+<h4 class="font-h3 text-h3 text-primary-container text-xl mb-3">Long-term Relationships</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Valuing continuity over immediacy; we build partnerships designed to outlast market cycles.</p>
+</div>
+<!-- Value 4 -->
+<div class="bg-white/60 backdrop-blur-[20px] border border-white/50 p-8 shadow-[0_8px_32px_rgba(0,0,0,0.03)] hover:shadow-[0_8px_32px_rgba(26,43,60,0.08)] transition-all duration-500 group">
+<span class="material-symbols-outlined text-3xl text-secondary mb-4 group-hover:scale-110 transition-transform duration-300" style="font-variation-settings: 'FILL' 0;">insights</span>
+<h4 class="font-h3 text-h3 text-primary-container text-xl mb-3">Market Expertise</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Deep, granular understanding of micro-markets, empowering strategies with proprietary intelligence.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Team Section -->
+<section class="py-stack-lg max-w-container-max mx-auto px-gutter">
+<div class="text-center mb-stack-md">
+<h2 class="font-h2 text-h2 text-primary-container mb-4">Leadership Heritage</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Guided by industry veterans whose experience spans multiple economic eras.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Team Member 1 -->
+<div class="group">
+<div class="relative overflow-hidden mb-6 h-[450px]">
+<img alt="Executive Partner" class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="Distinguished senior male executive in a tailored suit, standing in a well-lit modern architectural space, conveying authority and trust" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBagBOJ_EJDGrMoG672cPvoyMZAVD3NgDMo2-2lsO9kGtBZ-7jvC4GU0UwXwvXfjxxQxoFHLzOBg8-IIe0t1gIK4hcyPLncAD_KABQ55EUnmWoMfoGc4ODADOACm66-nu6Xaf8KZo6j74maSEQReyUGzokO5q2kKClI0fHRNQFIxGIMSXCv_hzvLiMDsl3fwXIFDJ-CLJC7gu5mZ1Zi0e7eJ7DU0Sudl6S0RtMFWVe2xa1jaWoVq-fHxYX4WSdV0Dki0njw1V1JYFM"/>
+<div class="absolute inset-0 bg-primary-container/20 group-hover:bg-transparent transition-colors duration-500"></div>
+</div>
+<h4 class="font-h3 text-h3 text-primary-container mb-1">Arthur Sterling</h4>
+<p class="font-label-caps text-label-caps text-secondary mb-3 uppercase tracking-widest">Managing Partner</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Leading complex institutional portfolio strategies since 1985. A staunch advocate for risk-adjusted generational planning.</p>
+</div>
+<!-- Team Member 2 -->
+<div class="group">
+<div class="relative overflow-hidden mb-6 h-[450px]">
+<img alt="Senior Partner" class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="Confident senior female executive in an elegant office setting, warm natural light, exuding professionalism and strategic insight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBe_-KA8NZer6bnGVlZtGeyNIyH5T1PtT7oEXNc4kI44mwBrIDFWXQh0lW3zjEdUSe3yTOu1tJb6DSPYgaRiDHWchJJQMltWjx4i-5DhX2X22SVogs6eJEV8KSisTbwIPl6FHVBo8Wbm5UcwBlG21fLMhJdnrPBlFregI5HjNSsomNRiQ-h9YVGgXMmLx47uCdAWibFDijSrOIpASyNW1I2ymdrFOhG7LDKY8CQfF4cGa_d5ULgPqpo6lHNG7P-UO9KdM5Tzq_JKK8"/>
+<div class="absolute inset-0 bg-primary-container/20 group-hover:bg-transparent transition-colors duration-500"></div>
+</div>
+<h4 class="font-h3 text-h3 text-primary-container mb-1">Eleanor Vance</h4>
+<p class="font-label-caps text-label-caps text-secondary mb-3 uppercase tracking-widest">Head of Private Wealth</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Architect of the firm's bespoke family office advisory practice. Unparalleled expertise in legacy asset preservation.</p>
+</div>
+<!-- Team Member 3 -->
+<div class="group">
+<div class="relative overflow-hidden mb-6 h-[450px]">
+<img alt="Director of Analytics" class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="Middle-aged male executive looking thoughtful in a corporate boardroom, representing market expertise and strategic planning" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgxCZZE9DFXnLzoO0sAnPaq3pqzJYofZyEcPacld-zWveRLfxeFGJs7TnXyZHo_3kweTt1jNpTDOItLbt0aMNr3RR7PT2iNQ56IjJj7gl8gn_sNsgYU0ZLhymalEqEqYsGnC3ts6HaC_rPAibCan8g0u6E4zmjT5HXQi6qbkESzWlOQ3nRsBMibOsj3pUjb0NgcTaqO9_0zMSpKgEODIqCQAYtuPKCSHc7bthXU1Kr0l-eDzuhNUThnKk_zbngkaJ6WmDhk5Hukd8"/>
+<div class="absolute inset-0 bg-primary-container/20 group-hover:bg-transparent transition-colors duration-500"></div>
+</div>
+<h4 class="font-h3 text-h3 text-primary-container mb-1">Julian Hayes</h4>
+<p class="font-label-caps text-label-caps text-secondary mb-3 uppercase tracking-widest">Director of Market Intelligence</p>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Bridging traditional market intuition with advanced predictive modeling to navigate modern commercial landscapes.</p>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full rounded-none border-t border-slate-700 dark:border-slate-800 bg-[#1A2B3C] dark:bg-black">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 py-20 md:px-32 max-w-full">
+<div>
+<div class="text-lg font-bold text-white mb-4">LUXE ADVISORY</div>
+<p class="font-['Noto_Serif'] text-xs tracking-wider text-slate-400">© 2024 Luxe Advisory. Private &amp; Confidential.</p>
+</div>
+<div class="flex flex-col space-y-4">
+<a class="font-['Noto_Serif'] text-xs tracking-wider text-slate-400 hover:text-white transition-colors opacity-100 hover:opacity-80 transition-opacity" href="#">Investment Strategy</a>
+<a class="font-['Noto_Serif'] text-xs tracking-wider text-slate-400 hover:text-white transition-colors opacity-100 hover:opacity-80 transition-opacity" href="#">Market Analysis</a>
+</div>
+<div class="flex flex-col space-y-4">
+<a class="font-['Noto_Serif'] text-xs tracking-wider text-slate-400 hover:text-white transition-colors opacity-100 hover:opacity-80 transition-opacity" href="#">Privacy Policy</a>
+<a class="font-['Noto_Serif'] text-xs tracking-wider text-slate-400 hover:text-white transition-colors opacity-100 hover:opacity-80 transition-opacity" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col space-y-4">
+<a class="font-['Noto_Serif'] text-xs tracking-wider text-slate-400 hover:text-white transition-colors opacity-100 hover:opacity-80 transition-opacity" href="#">Global Offices</a>
+</div>
+</div>
+</footer>
+</body></html>

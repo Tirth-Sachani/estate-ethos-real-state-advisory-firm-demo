@@ -1,0 +1,145 @@
+.main {
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: var(--spacing-xl);
+  background-color: var(--surface-container-low);
+}
+
+.pageHeader {
+  padding: var(--spacing-xl) 0 var(--spacing-lg);
+  text-align: center;
+}
+
+.title {
+  color: var(--primary);
+  margin-bottom: var(--spacing-sm);
+  font-size: 56px;
+}
+
+.subtitle {
+  color: var(--on-surface-variant);
+  font-size: 20px;
+}
+
+.contactContainer {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: var(--spacing-lg);
+}
+
+@media (max-width: 992px) {
+  .contactContainer {
+    grid-template-columns: 1fr;
+  }
+}
+
+.formSection {
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-xl);
+}
+
+.formSection h2 {
+  color: var(--primary);
+  margin-bottom: var(--spacing-lg);
+  font-size: 32px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.label {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.input, .select, .textarea {
+  width: 100%;
+  padding: 12px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--outline-variant);
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: var(--on-surface);
+  transition: border-color 0.3s ease;
+}
+
+.input:focus, .select:focus, .textarea:focus {
+  outline: none;
+  border-bottom-color: var(--primary);
+}
+
+.textarea {
+  resize: vertical;
+}
+
+.submitBtn {
+  margin-top: var(--spacing-md);
+  align-self: flex-start;
+}
+
+.infoSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.infoCard {
+  background-color: var(--primary);
+  color: var(--on-primary);
+  padding: var(--spacing-xl);
+  border-radius: var(--radius-xl);
+  flex-grow: 1;
+}
+
+.infoCard h2 {
+  color: var(--on-primary);
+  margin-bottom: var(--spacing-lg);
+  font-size: 32px;
+}
+
+.office {
+  margin-bottom: var(--spacing-lg);
+}
+
+.office:last-child {
+  margin-bottom: 0;
+}
+
+.officeCity {
+  color: var(--secondary-container);
+  font-size: 24px;
+  margin-bottom: var(--spacing-sm);
+}
+
+.contactList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.contactList li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.icon {
+  color: var(--secondary-container);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
